@@ -7,8 +7,8 @@
 	          Vue Time Tracker
 	        </a>
 	        <ul class="nav navbar-nav">
-	          <li><a v-link="'/home'">Home</a></li>
-	          <li><a v-link="'/time-entries'">Time Entries</a></li>
+	          <li><router-link to="/home" tag="a">Home</router-link></li>
+	          <li><router-link to="/time-entries" tag="a">Time Entries</router-link></li>
 	        </ul>
 	      </div>
 	    </nav>
