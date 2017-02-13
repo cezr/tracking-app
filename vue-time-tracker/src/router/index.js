@@ -4,6 +4,7 @@ import VueResource from 'vue-resource'
 
 import Hello from 'components/Hello'
 import Home from 'components/Home'
+import TimeEntries from 'components/TimeEntries'
 
 Vue.use(VueRouter)
 Vue.use(VueResource)
@@ -23,6 +24,10 @@ export default new VueRouter({
       path: '/home',
       name: 'Home',
       component: Home
+    },
+    {
+      path: '/time-entries',
+      component: TimeEntries
     }
   ]
 })
