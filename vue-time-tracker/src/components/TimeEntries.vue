@@ -105,6 +105,7 @@
       },
       timeUpdate (timeEntry) {
         console.log(timeEntry)
+        // debugger
         this.timeEntries.push(timeEntry)
         return true
       }

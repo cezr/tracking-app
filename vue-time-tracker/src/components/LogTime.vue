@@ -60,8 +60,9 @@
         let timeEntry = this.timeEntry
         // We dispatch the timeEntry so it can be pushed
         // onto the timeEntries array in the parent component
-        // this.$dispatch('timeUpdate', timeEntry)
-        this.$emit('timeUpdate', timeEntry)
+        // this.$dispatch('timeUpdate', timeEntry)  // old 1.0
+        // this.$emit('timeUpdate', timeEntry)      // only within same vue works
+        this.$emit('save', timeEntry)    // emit self to parent
         this.timeEntry = {}
       }
     }
